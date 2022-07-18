@@ -1,0 +1,47 @@
+<router-outlet></router-outlet>
+<p>header works!</p>
+
+
+<!-- <div class="container">
+    <div class="row justify-content-center pt-5">
+       <div class="col-sm-6 shadow round pb-3">
+         <h1 class="text-center pt-3 text-secondary">Register Form</h1>
+        <form [formGroup]="exForm">
+            <div class="form-group">
+                <label class="col-form-label">Name:</label>
+                <input type="text" formControlName="name" name="name" class="form-control">
+                <small *ngIf="!exForm.get('name')?.value && exForm.get('name')?.touched" class="text-danger">Name is Required...</small>
+            </div>
+            <div class="form-group">
+                <label class="col-form-label">Email:</label>
+                <input type="text"  formControlName="email" name="email" class="form-control">
+                <small  *ngIf="!exForm.get('email')?.value && exForm.get('email')?.touched" class="text-danger">Email is Required....</small>
+            </div>
+            <div class="form-group">
+                <label class="col-form-label">Phone:</label>
+                <input type="text"  formControlName="phone" name="phone" class="form-control">
+                <small  *ngIf="!exForm.get('phone')?.value && exForm.get('phone')?.touched" class="text-danger">Phone is Required....</small>
+            </div>
+     
+            <div class="form-group">
+                <label class="col-form-label">Message:</label>
+                <textarea formControlName="message" class="form-control" name="message"></textarea>
+                <small  *ngIf="!exForm.get('message')?.value && exForm.get('message')?.touched"  class="text-danger">Message is Required</small>
+            </div>
+
+            <button type="button" class="btn btn-primary mt-3" (click)="cliCksub()">Send</button>
+        </form>
+        </div>
+    </div>
+</div> -->
+
+<div class="header">
+    <input type="text" #food>
+    <button  (click)="sendMessage(food.value)">Send Message</button>
+</div>
+
+<br><br>
+<app-home></app-home>
+
+
+

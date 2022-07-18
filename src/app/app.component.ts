@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { Component, HostListener,Inject} from '@angular/core';
+import { inject } from '@angular/core/testing';
+import { MyserviceService } from './myservice.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +9,15 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'sahopractise';
+  // constructor(@Inject(MyserviceService)myserviceService){
+  //   console.log(myserviceService)
+  //   console.log("hii this is component.....")
+  // }
+  // // @Input()
+  // inputexample:any;
+  // }
+  // @HostListener('click',['$event'])
+  // onhostClick(event:Event){
+  //   alert('hii kashyap')
+  // }
 }
