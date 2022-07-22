@@ -9,17 +9,35 @@ import {ComponyModule} from './compony/compony.module'
 import { ReactiveFormsModule } from '@angular/forms';
 import { HomeComponent } from './home/home.component';
 
+
+import {AuthModule} from '../app/auth/auth.module';
+import { ChildeComponent } from './childe/childe.component';
+import { ParentComponent } from './parent/parent.component';
+import { ReactiveComponent } from './reactive/reactive.component';
+import { ReactivearrayComponent } from './reactivearray/reactivearray.component'
+
+import {HttpClientModule} from '@angular/common/http';
+import { CustomerComponent } from './customer/customer.component'
+
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    HomeComponent
+    HomeComponent,
+    ChildeComponent,
+    ParentComponent,
+    ReactiveComponent,
+    ReactivearrayComponent,
+    CustomerComponent,
+    
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     ComponyModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]

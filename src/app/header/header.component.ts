@@ -9,7 +9,7 @@ import { MyserviceService } from '../myservice.service';
 })
 export class HeaderComponent implements OnInit {
  
-  exForm!:FormGroup;
+  // exForm!:FormGroup;
 
   constructor(private myservice:MyserviceService) { }
 
@@ -27,8 +27,8 @@ export class HeaderComponent implements OnInit {
 //    this.exForm.reset()
 //  }
 
-sendMessage(message:any){
-  this.myservice.sendMessage(message)
-}
+// sendMessage(message:any){
+//   this.myservice.sendMessage(message)
+// }
 
 }
