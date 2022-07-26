@@ -1,5 +1,6 @@
 import { Component, HostListener,Inject} from '@angular/core';
 import { inject } from '@angular/core/testing';
+  
 import { MyserviceService } from './myservice.service';
 
 @Component({
@@ -17,7 +18,10 @@ export class AppComponent {
   // inputexample:any;
   // }
   // @HostListener('click',['$event'])
-  // onhostClick(event:Event){
-  //   alert('hii kashyap')
-  // }
+  //  onhostClick(event:Event){
+  //    alert('hii kashyap')
+  // //  }
+  //  @HostListener('mouseover') onmouseover(){
+  //    console.log('mouse over')
+  //  }
 }

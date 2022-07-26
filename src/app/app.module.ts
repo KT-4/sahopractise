@@ -17,7 +17,13 @@ import { ReactiveComponent } from './reactive/reactive.component';
 import { ReactivearrayComponent } from './reactivearray/reactivearray.component'
 
 import {HttpClientModule} from '@angular/common/http';
-import { CustomerComponent } from './customer/customer.component'
+import { CustomerComponent } from './customer/customer.component';
+import { ComponentComponent } from './component/component.component';
+import { PersonComponent } from './person/person.component';
+import { NotificationComponent } from './notification/notification.component'
+
+import { NotificationService } from './notification.service';
+import { ContactComponent } from './contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -29,6 +35,10 @@ import { CustomerComponent } from './customer/customer.component'
     ReactiveComponent,
     ReactivearrayComponent,
     CustomerComponent,
+    ComponentComponent,
+    PersonComponent,
+    NotificationComponent,
+    ContactComponent,
     
   ],
   imports: [
